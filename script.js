@@ -6,7 +6,9 @@ let selectedOption = '';
 // console.log(btn.previousElementSibling);
 // console.log(elem[0]);
 btn.addEventListener('click',() => {
-    elem.removeChild(selectedOption);
+    if (selectedOption instanceof Node) {
+        elem.removeChild(selectedOption);
+    }
 })
 
 
