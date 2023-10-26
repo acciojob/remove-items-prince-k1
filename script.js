@@ -11,7 +11,7 @@ btn.addEventListener('click',() => {
 
 
 
-elem.addEventListener('click', function() {
+elem.addEventListener('change', function() {
   const selectedIndex = this.selectedIndex; // Get the index of the selected option
   selectedOption = this.options[selectedIndex]; // Get the selected option element
 });
